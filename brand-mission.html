@@ -101,11 +101,13 @@
                                 <p class="po">No matter what team you’re on or what talents you offer, your time with Atlassian should be in service of the mission.</p>     
                                 <div class="clearfix">&nbsp;</div>
                                 <h2 class="link-cop">How do I apply our mission to my work?
-                                    <a href="javascript:void(0);" class="tool">
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
                                     </a>
                                 </h2>   
+
+                  
                                 <p class="po"> 
                                     Everything we do as a company should in some way further our mission. Ask yourself the following questions during your process to assess if your solution is mission-driven.
                                 </p> 
@@ -163,7 +165,9 @@
     </main>
 
    
- 
+    <button class="btn btn-primary" id="dffff" data-clipboard-text="It ccccccccc!">Click me</button>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -173,8 +177,22 @@
     crossorigin="anonymous"></script>   
     <script src="js/lightslider.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
 
+
+
+    <script type="text/javascript">
+
+        $('.tool').on('click', function() {
+            var clipboard = new Clipboard(".tool");
+            $(this).find(".tooltext").text("Copied!"); 
+            $(".tool").hover(function(){
+                $(".tool .tooltext").text("Copy link to heading"); 
+            });
+        });
  
+  
+    </script>
 
 
 
