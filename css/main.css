@@ -386,12 +386,24 @@ p.pb{
   color: rgb(23, 43, 77);
   font-size: 14px;
 }
+.mbox .bodx p{
+  color: rgb(23, 43, 77);
+  font-size: 14px;
+}
+.mbox .bodx p a{ 
+  color: rgb(0, 82, 204);
+}
+.mbox .bodx p a:hover{
+  text-decoration: underline;
+  color: #0098FF;
+}
 
 h2.link-cop{
   font-size: 24px;
   color: rgb(23, 43, 77);   
   font-weight: 400;
   padding-bottom: 10px;
+  margin-top: 40px;
 }
 h2.link-cop a{
   opacity: 0;
@@ -411,6 +423,7 @@ h3.link-cop{
   color: rgb(23, 43, 77); 
   font-weight: 400;
   padding-bottom: 10px;
+  margin-top: 20px;
 }
 h3.link-cop a{
   opacity: 0;
@@ -424,7 +437,22 @@ h3.link-cop a{
 h3.link-cop:hover a{
   opacity: 1;
 }
-
+.mbox .bodx ol li { 
+  color: rgb(23, 43, 77);
+  font-size: 14px;
+  line-height: 30px;
+}
+.mbox .bodx ol li:maker{ 
+  color: rgb(23, 43, 77);
+  font-size: 14px;
+  line-height: 30px;
+}
+.mbox .bodx ul li { 
+  color: rgb(23, 43, 77);
+  font-size: 14px;
+  line-height: 30px;
+}
+ 
 
 .tool {
   position: relative;
@@ -461,3 +489,4 @@ h3.link-cop:hover a{
   visibility: visible;
   opacity: 1;
 }
+

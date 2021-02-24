@@ -39,7 +39,7 @@
                     <li class="nav-item">
                         <a href="components" class="nav-link"><span>Components</span></a>   
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="patterns" class="nav-link"><span>Patterns</span></a>   
                     </li>
                     <li class="nav-item">
@@ -61,19 +61,28 @@
                 <div class="sidebar"> 
                     <ul>
                         <li>
-                            Brand
+                            PATTERNS
                         </li>
                         <li>
-                            <a href="brand-mission">Mission</a>
+                            <a href="patterns-benefits-modal">Benefits modal</a>
                         </li>
                         <li>
-                            <a href="brand-personality">Personality</a>
-                        </li>
-                        <li>
-                            <a href="brand-promise">Promise</a>
+                            <a href="patterns-forms">Forms</a>
                         </li>
                         <li class="active">
-                            <a href="brand-values">Values</a>
+                            <a href="patterns-inline-edit">Inline edit</a>
+                        </li>
+                        <li>
+                            <a href="patterns-media-picker">Media picker</a>
+                        </li>
+                        <li>
+                            <a href="patterns-messages">Messages</a>
+                        </li>
+                        <li>
+                            <a href="patterns-page-header">Page header</a>
+                        </li>
+                        <li>
+                            <a href="patterns-spotlight">Spotlight</a>
                         </li>
                     </ul>
                 </div>
@@ -82,10 +91,10 @@
                         <div class="row">
                             <div class="col-7">
                                 <div class="row">
-                                    <div class="col-8">
-                                        <h1>Values</h1>
+                                    <div class="col-7">
+                                        <h1>Inline edit</h1>
                                         <p>
-                                            Our values reflect the spirit with which an Atlassian works to fulfill our promise.
+                                            Inline edit lets people edit content, while allowing them to remain on the page.
                                         </p>
                                     </div> 
                                 </div>
@@ -96,97 +105,139 @@
                     <div class="col bodx">
                         <div class="row">
                             <div class="col-7">
- 
-                                <h2 class="link-cop">Open company, no bullshit
+                                
+                                <p> 
+                                    Use inline edit on screens where information may need to be updated often, such as a view issue page. This pattern can be used instead of a <a href="#">form</a>. 
+                                </p>
+
+                                <p>
+                                    Components that use inline editing include <a href="#">text field</a>, <a href="#">select</a> and <a href="#">date/time picker</a>.
+                                </p>
+                                <img src="images/inline-edit-01.png" class="img-fluid d-block mx-auto">
+
+                                <br> 
+
+                                <ol>
+                                    <li>
+                                        <b>Label:</b> Labels are sentence case and are as short as possible, while clearly describing the content of the field.
+
+
+                                    </li>
+                                    <li>
+                                        <b>Text field:</b> When in edit mode, the field snaps to the width of the column and the text remains aligned with the label. When in an empty state, this field is labeled as 'none'.
+                                    </li>
+                                    <li>
+                                        <b>Control trigger:</b> Indicates that actions are available in the field.
+                                    </li>
+                                    <li>
+                                        <b>Controls:</b> Always appear to the right of the field.
+                                    </li>
+                                    <li>
+                                        <b>Validation icon:</b> Select an appropriate icon.
+                                    </li>
+                                </ol>
+
+                                <p>
+                                    Inline edit wraps around any standard text field. Any styling of text field component is handled outside of this component. If you are placing a custom inline edit on something like a header, ensure that the font and box size line up properly.
+                                </p>
+
+
+                                <h2 class="link-cop">Style
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
                                     </a>
-                                </h2>   
+                                </h2>  
+
                                 <p>
-                                    Just as everything we do should be in support of our mission, everything we do should fulfill our promise. 
-                                </p>
-                          
+                                    The appearance of the inline edit will vary depending on which components it is used with.
+                                </p> 
 
-
-                                <h2 class="link-cop">Build with heart and balance
+                              
+                                <h3 class="link-cop">Field text
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
                                     </a>
-                                </h2>   
-                                <p>
-                                    “Measure twice, cut once.” Whether you're building a birdhouse or a business, this is good advice. Passion and urgency infuse everything we do, alongside the wisdom to consider options fully and with care. Then we make the cut, and we get to work. 
-                                </p>
-                             
+                                </h3>  
 
+                                <img src="images/inline-edit-02.png" class="img-fluid d-block mx-auto">
 
-
-                                <h2 class="link-cop">Don't #@!% the customer
+                                <h3 class="link-cop">Select with single option
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
                                     </a>
-                                </h2>   
-                                <p>
-                                    Customers are our lifeblood. Without happy customers, we’re doomed. So considering the customer perspective - collectively, not just a handful - comes first.
-                                </p>
-                            
+                                </h3>  
 
-                                <h2 class="link-cop">Play, as a team
+                                <img src="images/inline-edit-03.png" class="img-fluid d-block mx-auto">
+
+
+
+                                <h3 class="link-cop">Select with multiple options
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
                                     </a>
-                                </h2>   
-                                <p>
-                                    We spend a huge amount of our time at work. So the more that time doesn’t feel like “work,” the better. We can be serious, without taking ourselves too seriously. We strive to put what’s right for the team first – whether in a meeting room or on a football pitch. 
-                                </p>
-                               
+                                </h3>  
+
+                                <img src="images/inline-edit-04.png" class="img-fluid d-block mx-auto">
 
 
-                                <h2 class="link-cop">Be the change you seek
+                                <h3 class="link-cop">Mentions
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
                                     </a>
-                                </h2>   
+                                </h3>  
+
+                                <img src="images/inline-edit-05.png" class="img-fluid d-block mx-auto">
+
+                                <h3 class="link-cop">Remove controls
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3>  
+                                <p>Inline edits also have the option to remove the controls and save the contents in a field when the field loses focus.</p>
+                                <img src="images/inline-edit-06.png" class="img-fluid d-block mx-auto">
+
+                                <h2 class="link-cop">Behavior
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2>  
                                 <p>
-                                    All Atlassians should have the courage and resourcefulness to spark change – to make better our products, our people, our place. Continuous improvement is a shared responsibility. Action is an independent one.
-                                </p>
-                                <br><br>
+                                    Since inline edit is used when entering content, it is optimized for use with keyboard inputs (return to save and esc to cancel). When using a mouse, controls should always display on the bottom right of the field.
+                                </p> 
 
 
 
 
-
-
-
-
-
-                                    
                             </div>
                         </div> 
                     </div>
 
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="clearfix">&nbsp;</div> 
 
+
+
+                    <div class="clearfix">&nbsp;</div>
+                    <div class="clearfix">&nbsp;</div>
                     <div class="col footx">        
-                        © 2020 Atlassian
-                        <a href="#">
-                            Careers
-                        </a>
-                        <a href="#">
-                            Trademark
-                        </a>
-                        <a href="#">
-                            Privacy 
-                        </a>
-                        <a href="#">
-                            License
-                        </a>                     
+                            © 2020 Atlassian
+                            <a href="#">
+                                Careers
+                            </a>
+                            <a href="#">
+                                Trademark
+                            </a>
+                            <a href="#">
+                                Privacy 
+                            </a>
+                            <a href="#">
+                                License
+                            </a>                     
                     </div>
 
 
@@ -198,7 +249,6 @@
 
    
  
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -208,22 +258,8 @@
     crossorigin="anonymous"></script>   
     <script src="js/lightslider.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
 
-
-
-    <script type="text/javascript">
-
-        $('.tool').on('click', function() {
-            var clipboard = new Clipboard(".tool");
-            $(this).find(".tooltext").text("Copied!"); 
-            $(".tool").hover(function(){
-                $(".tool .tooltext").text("Copy link to heading"); 
-            });
-        });
  
-  
-    </script>
 
 
 
