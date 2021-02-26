@@ -315,7 +315,7 @@ p.pb{
   padding-left: 0px; 
 }
 .sidebar ul li{ 
-  font-weight: 600;
+  font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
   padding-top: 5px;
@@ -323,6 +323,10 @@ p.pb{
   padding-left: 30px;
   color: rgb(23, 43, 77);
   border-left: 4px solid transparent;
+  text-transform: uppercase;
+}
+.sidebar ul li.sub{
+  padding-left: 48px;
 }
 .sidebar ul li.active{
   background-color: #EBECF0;
@@ -490,3 +494,50 @@ h3.link-cop:hover a{
   opacity: 1;
 }
 
+
+.box-sucx{
+  background-color: #E3FCEF;
+  border-top: 4px solid #36B37E;
+  padding: 16px;
+  border-radius: 0px 0px 4px 4px;
+  padding-right: 10px;
+}
+.box-danx{
+  background-color: #FFEBE6;
+  border-top: 4px solid #DE350B;
+  padding: 16px;
+  border-radius: 0px 0px 4px 4px;
+  padding-left: 10px;
+}
+.box-sucx p{
+  color: rgb(94, 108, 132);
+  font-size: 12px;
+  line-height: 1.27273;
+}
+.box-danx p{
+  color: rgb(94, 108, 132);
+  font-size: 12px;
+  line-height: 1.27273;
+}
+.box-sucx h4{
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.33333;
+  letter-spacing: 1px;
+}
+.box-danx h4{
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.33333;
+  letter-spacing: 1px;
+}
+.box-sucx i{
+  color: rgb(54, 179, 126);
+  font-size: 20px;
+}
+.box-danx i{
+  color: rgb(222, 53, 11);
+  font-size: 20px;
+}
