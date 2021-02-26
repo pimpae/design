@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <meta name="viewport" content="initial-scale=0.1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />    
+    <!-- <link rel="icon" type="image/x-icon" href="images/iconx.jpg"> --> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title> Design System </title> 
+   
+
+</head>
+<body>
+
+
+    <header> 
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a href="index.html" class="navbar-brand">Design System</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="brand" class="nav-link"><span>Brand</span></a>  
+                    </li>
+                    <li class="nav-item active">
+                        <a href="foundations" class="nav-link"><span>Foundations</span></a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="content" class="nav-link"><span>Content</span></a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="components" class="nav-link"><span>Components</span></a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="patterns" class="nav-link"><span>Patterns</span></a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources" class="nav-link"><span>Resources</span></a>   
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto search-x">
+                    <input type="text" class="form-control" placeholder="Search"> 
+                    <span><i class="fas fa-search"></i></span>
+                </form>
+            </div>
+        </nav>
+    </header>
+ 
+    
+    <main>
+        <div class="col">
+            <div class="row">
+                <div class="sidebar"> 
+                    <ul>
+                        <li>
+                            Foundations
+                        </li>
+                        <li>
+                            <a href="foundations-accessibility">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="foundations-color">Color</a>
+                        </li>
+                        <li>
+                            <a href="foundations-grid">Grid</a>
+                        </li>
+                        <li class="active">
+                            <a href="foundations-iconography">Iconography</a>
+                        </li>
+                        <li>
+                            <a href="foundations-illustrations">Illustrations</a>
+                        </li>
+                        <li>
+                            <a href="foundations-logos">Logos</a>
+                        </li>
+                        <li>
+                            <a href="foundations-typography">Typography</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mbox">
+                    <div class="col headx">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1>Iconography</h1>
+                                        <p>
+                                            Icons are visual representations of commands, devices, directories, or common actions.
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col bodx">
+                        <div class="row">
+                            <div class="col-7">
+
+                                <p>
+                                    Icons should be used in a purposeful manner to maximize comprehension and reduce cognitive load when you need to call attention to a particular action, command, or section. Use them infrequently – if you’re questioning an icon’s use, it probably doesn’t need to be used at all.
+                                </p>
+                                <p>
+                                    Our icons are designed with our brand personality baked in, aiming to balance our human side with function.
+                                </p>
+
+                                <P>
+                                    As a general rule, icons should be used in combination with meaningful text to support users progressing through the product in an accessible manner. However, avoid aria-labels if you are rendering the icon with visible text to prevent accessibility label duplication.
+                                </P>
+
+                                <p>
+                                    There are few widely recognized icons, so whenever possible, use a label or supporting text to ensure its meaning is understood. In this case, an aria-label will be used for the icon.
+                                </p>
+
+                                <p>
+                                    Find out more about writing meaningful text in our <a href="#">accessibility guidelines</a>.
+                                </p>
+
+
+                                <p>
+                                    Combining unfamiliar icons with text could confuse users depending on how they recognize the supporting icon, so make sure the icon and text label are coupled. To help enhance usability further, ensure the icon color has at least a <a href="#">Web Content Accessibility Guidelines (WCAG) 2.1 AA standard color contrast ratio</a>.
+
+
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="images/iconography-01-do.png" class="img-fluid d-block mx-auto">
+                                        <div class="box-sucx">
+                                            <h4><i class="fas fa-check-circle"></i> DO</h4>
+                                            <p>
+                                                Use a consistent heading hierarchy: H1, H2, H3, H4
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="images/iconography-01-dont.png" class="img-fluid d-block mx-auto">
+                                        <div class="box-danx">
+                                            <h4><i class="fas fa-times-circle"></i> DON'T</h4>
+                                            <p>
+                                                Use headings out of order: H2, H1, H3, H3
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <p>
+                                    Avoid using icons solely for decoration or visual interest as it detracts from their intention elsewhere. Consider the surrounding context of icons too; if icons are cluttered and not spaced well, it can lead to more visual noise and confusion.
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="images/iconography-02-do.png" class="img-fluid d-block mx-auto">
+                                        <div class="box-sucx">
+                                            <h4><i class="fas fa-check-circle"></i> DO</h4>
+                                            <p>
+                                                Use a single icon for clarity.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="images/iconography-02-dont.png" class="img-fluid d-block mx-auto">
+                                        <div class="box-danx">
+                                            <h4><i class="fas fa-times-circle"></i> DON'T</h4>
+                                            <p>
+                                                Too many icons in UI create visual noise.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Icons can represent a single concept such as + which always represents ‘add’, or be thematic in concept such as ☆ which might represent "favorite", "like", "star" etc. Using an icon appropriately allows our users to create a connection to a concept, so don’t over-extend what an icon represents.
+                                </p>
+
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="images/iconography-03-do.png" class="img-fluid d-block mx-auto">
+                                        <div class="box-sucx">
+                                            <h4><i class="fas fa-check-circle"></i> DO</h4>
+                                            <p>
+                                                Use a single icon per concept.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="images/iconography-03-dont.png" class="img-fluid d-block mx-auto">
+                                        <div class="box-danx">
+                                            <h4><i class="fas fa-times-circle"></i> DON'T</h4>
+                                            <p>
+                                                Multiple icon variations should not be used for the same concept.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                          
+                                <h2 class="link-cop">Internationalization
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2>  
+                                
+                                <p>
+                                    Always consider icons from a global perspective. Whenever possible, use an internationally recognized icon in place of a locally recognized icon that may only apply to a specific background or culture such as a local currency symbol, € ¥ £, rather than always using $.
+                                </p>
+
+
+                                <h2 class="link-cop">Platform specifics
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2>  
+                                
+                                <p>
+                                    Our icons can be used across web, iOS, Android, and macOS to represent similar concepts. Some icons, however, are already established conventions on specific platforms. In these cases, follow the conventions for the operating system using the OS-specific guidance.
+
+
+                                </p>
+
+                                <h2 class="link-cop">Icon types
+
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2>  
+
+
+                                <img src="images/iconography-icon-types_2x.png" class="img-fluid d-block mx-auto">
+
+                                <p>
+                                    You can search for icons by filename or by usage in our <a href="#">icon explorer in Atlaskit</a>. There are three types of icons in our design system: 
+                                </p>
+
+                                <h3 class="link-cop">Standard icons
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3>  
+                                
+                                <p>
+                                    Standard sized icons are used as visual representations of common actions and commands to provide additional context and enhance usability. These icons can be scaled up or down in size if necessary.
+                                </p>
+
+
+                                <h3 class="link-cop">Standard icons
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3>  
+                                
+                                <p>
+                                    Standard sized icons are used as visual representations of common actions and commands to provide additional context and enhance usability. These icons can be scaled up or down in size if necessary.
+                                </p>
+
+                                <h3 class="link-cop">Object icons
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3>  
+                                
+                                <p>
+                                    Object icons are specifically used to represent an object specific to an Atlassian product, such as ‘bug’ in Jira or ‘pull request’ in Bitbucket. These icons are different from standard icons and file type icons.
+                                </p>
+
+                                <h3 class="link-cop">File type icons
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3>  
+                                
+                                <p>
+                                    Files type icons are often used in the same context as most other Object icons. There are common file types (txt, mp3, mov, etc), and third party integrations' file types (docx, ai, sketch, etc).
+                                </p>
+
+
+                                <h2 class="link-cop">Variations
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2>  
+                                
+                                <h3 class="link-cop">Style
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3> 
+
+                                <img src="images/iconography-style-variations_2x.png" class="img-fluid d-block mx-auto">
+
+
+                                <p>
+                                    Our icons have variations to work within a given context. There will be a line version, which can be accompanied by a filled version. Use the line version of our icon in most cases as they are visually balanced, so more than one can be used when close together.
+                                </p>
+
+                                <p>
+                                    Often, a filled version can be used to represent an action or command that has been carried out, such as using a filled star when a post has been “favorited“. You can use color to further reinforce this interaction and change.
+                                </p>
+
+
+                                <h3 class="link-cop">Size
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3> 
+                                <p>
+                                    There are three icon sizes in our design system:
+                                </p>
+                                <h4>16px (small)</h4>
+                                <p>
+                                    Small icons are best used when space is limited. We use small icons in our components such as a chevron-down in the select component or a cross-circle-filled in populated text fields.
+                                </p>
+
+                                <h4>24px (medium)</h4>
+                                <p>
+                                    Medium icons are used in the majority of our interface. These are our standard size.
+                                </p>
+
+                                <h4>32px (large)</h4>
+                                <p>
+                                    Large icons are used sparingly to emphasize a concept or when space is plentiful. Wherever it’s used, consider the fidelity of the icon in the space it’s being used. (If there's plenty of room, a spot illustration might be more appropriate).
+                                </p>
+                                <p>
+                                    In general, consider the context of the icon when adjusting the size such as the size of other icons surrounding it and the balance of other UI elements.
+                                </p>    
+
+                                <h3 class="link-cop">Color
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3> 
+
+                                <p>
+                                    Our icons are available to use as a single color. N500 is the default color and N70 is used for disabled states. For components containing confirmations, alerts, information, and acknowledgments, follow the guidelines associated with the component and use case.
+
+
+                                </p>
+                                <p>
+                                    Using icons with a text label and color will enhance the usability and <a href="#">accessibility</a> for all users.
+                                </p>
+
+                                <h2 class="link-cop">Server
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2> 
+
+                                <p>
+                                    AUI icons use different sizing and certain icons may not be available. See the 
+                                    <a href="#">AUI documentation on icons</a>.
+                                </p>
+
+
+
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="clearfix">&nbsp;</div>
+                    <div class="clearfix">&nbsp;</div>
+                    <div class="col footx">        
+                            © 2020 Atlassian
+                            <a href="#">
+                                Careers
+                            </a>
+                            <a href="#">
+                                Trademark
+                            </a>
+                            <a href="#">
+                                Privacy 
+                            </a>
+                            <a href="#">
+                                License
+                            </a>                     
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+   
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>   
+    <script src="js/lightslider.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
+ 
+
+
+
+
+</body>
+
+
+
+</html>

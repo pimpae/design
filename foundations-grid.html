@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <meta name="viewport" content="initial-scale=0.1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />    
+    <!-- <link rel="icon" type="image/x-icon" href="images/iconx.jpg"> --> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title> Design System </title> 
+   
+
+</head>
+<body>
+
+
+    <header> 
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a href="index.html" class="navbar-brand">Design System</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="brand" class="nav-link"><span>Brand</span></a>  
+                    </li>
+                    <li class="nav-item active">
+                        <a href="foundations" class="nav-link"><span>Foundations</span></a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="content" class="nav-link"><span>Content</span></a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="components" class="nav-link"><span>Components</span></a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="patterns" class="nav-link"><span>Patterns</span></a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources" class="nav-link"><span>Resources</span></a>   
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto search-x">
+                    <input type="text" class="form-control" placeholder="Search"> 
+                    <span><i class="fas fa-search"></i></span>
+                </form>
+            </div>
+        </nav>
+    </header>
+ 
+    
+    <main>
+        <div class="col">
+            <div class="row">
+                <div class="sidebar"> 
+                    <ul>
+                        <li>
+                            Foundations
+                        </li>
+                        <li>
+                            <a href="foundations-accessibility">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="foundations-color">Color</a>
+                        </li>
+                        <li class="active">
+                            <a href="foundations-grid">Grid</a>
+                        </li>
+                        <li>
+                            <a href="foundations-iconography">Iconography</a>
+                        </li>
+                        <li>
+                            <a href="foundations-illustrations">Illustrations</a>
+                        </li>
+                        <li>
+                            <a href="foundations-logos">Logos</a>
+                        </li>
+                        <li>
+                            <a href="foundations-typography">Typography</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mbox">
+                    <div class="col headx">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1>Grid</h1>
+                                        <p>
+                                            The grid is the foundation for positioning elements onscreen. Designing to the grid helps create seamless, easy to follow experiences.
+
+
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col bodx">
+                        <div class="row">
+                            <div class="col-7">
+
+                                <p>
+                                    Consistent use of a grid system provides the foundation for harmoniously and consistently positioning elements onscreen. Designing to the grid helps create an experience that facilitates understanding and brings order to the page.
+
+
+                                </p>
+                                <p>
+                                    The grid can be applied through the page component in the <a href="#">
+                                        Atlaskit library
+                                    </a>.
+
+
+                                </p>
+
+                
+
+                          
+                                <h2 class="link-cop">Baseline grid and vertical rhythm
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2>  
+
+                                <p>
+                                    The Atlassian type stack specifies 14px for the base font size, which produces an 8px x-height. The x-height is halved to produce a 4px baseline. All text flows vertically along this baseline, creating a similar rhythm across all screens. This rhythm is created by the line height between each line of text and the margin between elements.
+                                </p> 
+
+                                <img src="images/grid-baseline.png" class="img-fluid d-block mx-auto">
+
+                                <h3 class="link-cop">Have a consistent hierarchy
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3> 
+                                <p>
+                                    This baseline convention naturally flows on to the rest of the grid system, which includes icons, components, and layout dimensions. Always try to align objects on the 8px grid, but where necessary use good judgement to fine tune your designs to 4px. The 4px baseline is there to allow more flexibility for line heights and smaller adjustments.
+                                </p>
+
+                                <img src="images/grid-button-spacing.png" class="img-fluid d-block mx-auto">
+
+                                <img src="images/grid-dropdown-spacing.png" class="img-fluid d-block mx-auto">
+
+
+                                <h3 class="link-cop">Best practices
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3> 
+
+                                <ul>
+                                    <li>Use multiples of 8px when defining measurements, spacing, and positioning elements.</li>
+                                    <li>When necessary use 4px to make more fine tuned adjustments.</li>
+                                    <li>Whenever possible, make sure that objects line up, both vertically and horizontally.</li>
+                                    <li>Align your bounding box to the grid, not the baseline of your text.</li>
+                                </ul>
+
+
+                                <h2 class="link-cop">Layout with the horizontal grid
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2> 
+
+                                <p>
+                                    We define a horizontal grid for content and UI elements to align to, creating a visual structure with content. We prefer this over relying heavily on boxes and lines around content as it reduces the amount of elements a user needs to scan in order to digest what they see. We believe that the user's content should be the main focus of a page, so we reduce all unnecessary distractions.
+                                </p>
+
+                                <img src="images/grid-cols-anatomy.png" class="img-fluid d-block mx-auto">
+
+                                <ol>
+                                    <li><b>Global navigation:</b> Minimum width of 60px.</li>
+                                    <li><b>Container navigation:</b> Minimum width of 240px.</li>
+                                    <li><b>Content:</b> Adaptive width</li>
+                                    <li><b>Gutter:</b> Fixed spacing between columns.</li>
+                                    <li><b>Column:</b> Guides what the content aligns to.</li>
+                                </ol>
+
+
+                                <p>
+                                    In our grid system we reserve space for the navigation on the left, and apply a center-aligned 12-column adaptive layout to the content. You can apply a fixed width or a fluid grid layout. The fixed-width layout has a max-width of 960px and is useful for long form content. The fluid layout full-screen works better for screens that are data or interaction heavy.
+                                </p>
+
+                                <p>
+                                    You can combine multiple blocks of fixed and fluid layout underneath each other on a single screen. This is useful when you want to combine a piece of long form text with a code block that would be the full width of the screen.
+                                </p>
+
+                                <p>
+                                    Both layouts are adaptive. This means column widths will react to whether the navigation is expanded or not, and columns will scale according to available screen real estate. When screen drops below the max-width of the fixed layout, both grid types effectively look the same.
+                                </p>
+
+                                <h3 class="link-cop">Gutter spacing
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3> 
+
+                                <p>
+                                    The gutters in between columns have a fixed width and only scale when the text size scales to maintain a distinct and legible separation of content. There are three different gutter sizes to allow for different types of content spacing: compact, cozy, and comfortable.
+                                </p>
+
+                                <img src="images/grid-cols-spacing.png" class="img-fluid d-block mx-auto">
+
+                                <ol>
+                                    <li><b>Compact:</b> Least whitespace between columns.</li>
+                                    <li><b>Cozy:</b> (Default) normal whitespace between columns.</li>
+                                    <li><b>Comfortable:</b> Most whitespace between columns.</li>
+                                </ol>
+
+                                <h2 class="link-cop">Column layout and text
+
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2> 
+
+                                <p>
+                                    Layouts in our products are generally in an eight or 12 column configuration. The simplest layout is a centered, single block that spans eight columns. Alternatively, the layout can be extended to use the remaining four columns if there is a need for primary and secondary information.
+
+
+                                </p>
+
+
+                                <p>
+                                    Using the default font size value in the Atlassian type stack, we can optimize the max width of paragraphs for a comfortable reading experience. There's an overall maximum width set in the layout to ensure that the line length of text does not exceed a readable measure of 100 characters per line. At 14px, the recommended line length falls at eight columns. With the exception of code, text blocks should not be set across more than that.
+
+
+                                </p>
+
+                                <img src="images/grid-text-layout.png" class="img-fluid d-block mx-auto">
+
+
+                                <h3 class="link-cop">Best practices
+
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h3> 
+
+                                <ul>
+                                    <li>
+                                        Keep layouts simple. Consider a single block of eight columns or two blocks of eight and four for basic layout.
+                                    </li>
+                                    <li>
+                                        Maximum line length should span up to eight columns, which is the ideal size for all content types. Do not go over this size for normal text.
+                                    </li>
+                                </ul>
+
+
+                                <h2 class="link-cop">Server
+
+                                    <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
+                                        <i class="fas fa-link" ></i> 
+                                        <span class="tooltext">Copy link to heading</span>
+                                    </a>
+                                </h2> 
+
+                                <p>
+                                    In place of the grid, use AUI's <a href="#">page layout guidelines</a>. 
+                                </p>
+
+
+
+
+
+
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="clearfix">&nbsp;</div>
+                    <div class="clearfix">&nbsp;</div>
+                    <div class="col footx">        
+                            © 2020 Atlassian
+                            <a href="#">
+                                Careers
+                            </a>
+                            <a href="#">
+                                Trademark
+                            </a>
+                            <a href="#">
+                                Privacy 
+                            </a>
+                            <a href="#">
+                                License
+                            </a>                     
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+   
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>   
+    <script src="js/lightslider.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
+ 
+
+
+
+
+</body>
+
+
+
+</html>

@@ -541,3 +541,9 @@ h3.link-cop:hover a{
   color: rgb(222, 53, 11);
   font-size: 20px;
 }
+
+.mbox .bodx h4{ 
+  font-weight: 400;
+  color: rgb(23, 43, 77);
+  font-size: 16px;
+}
