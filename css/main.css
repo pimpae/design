@@ -546,4 +546,117 @@ h3.link-cop:hover a{
   font-weight: 400;
   color: rgb(23, 43, 77);
   font-size: 16px;
+} 
+.table-50 thead tr th{
+  border-top: none;
+  width: 50%;
+}
+.table-50 tbody td{
+  border-bottom: 1px solid transparent;  
+}
+.table-50 tbody tr td { 
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.table-50 tbody tr td p{
+  line-height: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.table-50 thead, .table-50 tbody, .table-50 tfoot {
+  border-bottom: 2px solid rgb(223, 225, 230);
+}
+
+.mbox .bodx p code{
+  border-radius: 3px;
+  padding: 4px;
+  margin: 0px 1px;
+  background-color: rgb(244, 245, 247);
+  color: #172B4D; 
+}
+
+.table-25 thead tr th{
+  border-top: none;
+  width: 50%;
+}
+.table-25 thead tr th:nth-child(1){
+  width: 25%;
+}
+.table-25 tbody td{
+  border-bottom: 1px solid transparent;  
+}
+.table-25 tbody tr td { 
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.table-25 tbody tr td p{
+  line-height: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.table-25 thead, .table-25 tbody, .table-25 tfoot {
+  border-bottom: 2px solid rgb(223, 225, 230);
+}
+
+
+.table-20 thead tr th{
+  border-top: none;
+  width: 50%;
+}
+.table-20 thead tr th:nth-child(1){
+  width: 10%;
+}
+.table-20 thead tr th:nth-child(2){
+  width: 5%;
+}
+.table-20 tbody td{
+  border-bottom: 1px solid transparent;  
+}
+.table-20 tbody tr td { 
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.table-20 tbody tr td p{
+  line-height: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.table-20 thead, .table-20 tbody, .table-20 tfoot {
+  border-bottom: 2px solid rgb(223, 225, 230);
+}
+.table tbody tr td ol{
+  padding-left: 0px;
+}
+.table tbody tr td ul{
+  padding-left: 0px;
+}
+
+.box3{ 
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgb(9 30 66 / 25%), 0 0 1px 0 rgb(9 30 66 / 31%);
+  overflow: hidden;
+  background-color: #fff;
+  grid-column: span 4;
+  height: 320px;
+  margin-bottom: 15px;
+}
+.box3:hover{
+  box-shadow: 0 8px 16px -4px rgb(9 30 66 / 25%), 0 0 1px rgb(9 30 66 / 31%);
+}
+
+.box3 h2{
+  margin-top: 16px;
+  font-weight: 400;
+  color: rgb(23, 43, 77);
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.box3 p{
+  margin-top: 8px;
+  overflow-wrap: break-word;
+  color: rgb(23, 43, 77);
+  font-size: 14px;
+  line-height: 1.71429;
+  font-weight: 400;
 }
