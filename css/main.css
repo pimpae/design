@@ -84,8 +84,27 @@ a:hover{
   height: 56px;
 }
 nav.navbar{
-  background-color: #171d2d;
+  background-color: #fff;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
+
+.sidebar{
+  min-height: calc(~"100vh - 150px");
+  border-right: 1px solid #EBECF0; 
+  padding: 80px 0px 40px; 
+  width: 270px !important;
+  background-color: #171C2D;
+  position: relative;
+  float: left;
+}
+.mbox{
+  float: left;
+  position: relative;
+  width: calc(100% - 270px);
+}
+
+
+
 .search-x input{
   height: 32px;
   width: 100%;
@@ -103,7 +122,8 @@ nav.navbar{
   color: #6B778C;
 }
 .navbar-brand{
-  color: #fff;
+  color: #171C2D;
+  width: 231.2px;
 }
 .navbar .navbar-nav .nav-item{ 
   margin-left: 5px;
@@ -112,21 +132,22 @@ nav.navbar{
   height: 56px;
 }
 .navbar .navbar-nav .nav-item .nav-link{
-  color: #fff;
+  color: #171C2D;
   padding: 15px 0px; 
   font-size: 14px;
 }
 
 .navbar .navbar-nav .nav-item.active{
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #171C2D;
 }
 .navbar .navbar-nav .nav-item .nav-link span {
   padding: 4px 6px 6px; 
 }
 .navbar .navbar-nav .nav-item .nav-link:hover span {
   padding: 4px 6px 6px;
-  background-color: #4A5363;
+  background-color: #171C2D;
   border-radius: 4px;
+  color: #fff;
 }
 
 footer{
@@ -299,17 +320,8 @@ p.pb{
   min-height: 224px;
 }
  
-.sidebar{
-  min-height: 100vh;
-  border-right: 1px solid #EBECF0; 
-  padding: 60px 0px; 
-  width: 14%;
-}
-.sidebar{
-  min-height: 100vh;
-  border-right: 1px solid #EBECF0; 
-  padding-top: 80px; 
-}
+
+ 
 .sidebar ul{
   list-style: none;
   padding-left: 0px; 
@@ -321,7 +333,7 @@ p.pb{
   padding-top: 5px;
   padding-bottom: 5px;  
   padding-left: 30px;
-  color: rgb(23, 43, 77);
+  color: #fff;
   border-left: 4px solid transparent;
   text-transform: uppercase;
 }
@@ -329,23 +341,26 @@ p.pb{
   padding-left: 48px;
 }
 .sidebar ul li.active{
-  background-color: #EBECF0;
+  background-color: #FAFBFC;
   border-left: 4px solid #2684FF;
 }
-.sidebar ul li:hover:nth-child(n+2) {
-  background-color: #EBECF0;
+.sidebar ul li.active a{
+  color: #171C2D !important;
+}
+.sidebar ul li:hover:nth-child(n+2){
+  background-color: #FAFBFC; 
+}
+.sidebar ul li:hover:nth-child(n+2) a{ 
+  color: #171C2D !important;
 }
 .sidebar ul li a{  
   font-size: 14px; 
   font-weight: normal;
-  color: #344563 !important;  
+  color: #fff !important;  
   text-transform: capitalize;
   display: block;
 }
-.mbox{
-  width: 86%;
-
-}
+ 
 .mbox .headx{
   background-color: #FAFBFC;
   padding-left: 80px;
