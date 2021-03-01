@@ -101,7 +101,7 @@
                         <div class="row">
                             <div class="col-7">
                                
-                                <h2 class="link-cop">What’s our personality?
+                                <h2 class="link-cop" id="whats-our-personality">What’s our personality?
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
@@ -110,7 +110,7 @@
 
                                 <br>
 
-                                <h3 class="link-cop">Bold
+                                <h3 class="link-cop" id="bold">Bold
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
@@ -130,7 +130,7 @@
                                 </p>
                                 <br>
 
-                                <h3 class="link-cop">Optimistic
+                                <h3 class="link-cop" id="optimistic">Optimistic
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
@@ -149,7 +149,7 @@
                                 </p>
 
                                 <br>
-                                <h3 class="link-cop">Practical with a wink
+                                <h3 class="link-cop" id="practical-with-a-wink">Practical with a wink
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
@@ -179,7 +179,7 @@
                                 </p>
 
                                 <br><br><br>
-                                <h2 class="link-cop">How do I apply our mission to my work?
+                                <h2 class="link-cop" id="how-do-i-apply-our-personality-to-my-work">How do I apply our mission to my work?
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
                                         <span class="tooltext">Copy link to heading</span>
@@ -253,6 +253,29 @@
 
 
 
+    <nav class="section-nav">
+        <ol>
+            <li><a href="#whats-our-personality">whats-our-personality</a></li>
+            <li><a href="#bold">bold</a></li>
+            <li><a href="#optimistic">Request optimistic</a></li>
+            <li><a href="#practical-with-a-wink">practical-with-a-wink</a></li>
+            <!-- <li>
+                <a href="#endpoints">Endpoints</a>
+                <ul>
+                    <li class=""><a href="#endpoints--root">Root</a></li>
+                    <li class=""><a href="#endpoints--cities-overview">Cities Overview</a></li>
+                    <li class=""><a href="#endpoints--city-detail">City Detail</a></li>
+                    <li class=""><a href="#endpoints--city-config">City Config</a></li>
+                    <li class=""><a href="#endpoints--city-spots-overview">City Spots Overview</a></li>
+                    <li class=""><a href="#endpoints--city-spot-detail">City Spot Detail</a></li>
+                    <li class=""><a href="#endpoints--city-icons-overview">City Icons Overview</a></li>
+                    <li class=""><a href="#endpoints--city-icon-detail">City Icon Detail</a></li>
+                </ul>
+            </li> -->
+            <li class=""><a href="#how-do-i-apply-our-personality-to-my-work">how-do-i-apply-our-personality-to-my-work</a></li> 
+        </ol>
+    </nav>
+
     <script type="text/javascript">
 
         $('.tool').on('click', function() {
@@ -262,7 +285,25 @@
                 $(".tool .tooltext").text("Copy link to heading"); 
             });
         });
- 
+        
+
+        window.addEventListener('DOMContentLoaded', () => {
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    if (entry.intersectionRatio > 0) {
+                        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+                    } else {
+                        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+                    }
+                });
+            }); 
+            document.querySelectorAll('h2,h3[id]').forEach((h2,h3) => {
+                observer.observe(h2,h3);
+            });
+
+        });
   
     </script>
 
