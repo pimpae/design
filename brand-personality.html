@@ -99,12 +99,12 @@
 
                     <div class="col bodx">
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-7 entry-content">
                                
                                 <h2 class="link-cop" id="whats-our-personality">What’s our personality?
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
-                                        <span class="tooltext">Copy link to heading</span>
+                                        <span class="tooltext"></span>
                                     </a>
                                 </h2> 
 
@@ -113,7 +113,7 @@
                                 <h3 class="link-cop" id="bold">Bold
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
-                                        <span class="tooltext">Copy link to heading</span>
+                                        <span class="tooltext"></span>
                                     </a>
                                 </h3>   
 
@@ -133,7 +133,7 @@
                                 <h3 class="link-cop" id="optimistic">Optimistic
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
-                                        <span class="tooltext">Copy link to heading</span>
+                                        <span class="tooltext"></span>
                                     </a>
                                 </h3> 
                                 <p>
@@ -152,7 +152,7 @@
                                 <h3 class="link-cop" id="practical-with-a-wink">Practical with a wink
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
-                                        <span class="tooltext">Copy link to heading</span>
+                                        <span class="tooltext"></span>
                                     </a>
                                 </h3> 
                                 
@@ -182,7 +182,7 @@
                                 <h2 class="link-cop" id="how-do-i-apply-our-personality-to-my-work">How do I apply our mission to my work?
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
-                                        <span class="tooltext">Copy link to heading</span>
+                                        <span class="tooltext"></span>
                                     </a>
                                 </h2>   
 
@@ -210,8 +210,16 @@
 
 
                             </div>
+                            <div class="side-left">
+                                <div id="sticky-navigator">
+                                </div>
+                            </div>
                         </div> 
                     </div>
+ 
+
+
+
                     <div class="clearfix">&nbsp;</div>
                     <div class="clearfix">&nbsp;</div>
                     <div class="clearfix">&nbsp;</div> 
@@ -252,25 +260,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
 
 
+ 
 
-    <nav class="section-nav">
-        <h3>Contents</h3>
-        <ul> 
-            <li>
-                <a href="#whats-our-personality">What’s our personality?</a>
-                <ul>
-                    <li class=""><a href="#bold">bold</a></li>
-                    <li class=""><a href="#optimistic">Optimistic</a></li>
-                    <li class=""><a href="#practical-with-a-wink">Practical with a wink</a></li> 
-                </ul>
-            </li>
-            <li class=""><a href="#how-do-i-apply-our-personality-to-my-work">how-do-i-apply-our-personality-to-my-work</a></li> 
-        </ul>
-    </nav>
+    
 
 
+    <script type="text/javascript" src="js/index.js"></script>
 
     <script type="text/javascript">
+
+        $( ".tool" ).hover(
+            function() {
+                $(".tool .tooltext").text("Copy link to heading"); 
+            }
+        );
 
         $('.tool').on('click', function() {
             var clipboard = new Clipboard(".tool");
@@ -280,25 +283,6 @@
             });
         });
         
-
-        window.addEventListener('DOMContentLoaded', () => {
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    const id = entry.target.getAttribute('id');
-                    if (entry.intersectionRatio > 0) {
-                        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-                        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-                    } else {
-                        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-                    }
-                });
-            }); 
-            document.querySelectorAll('h3[id]').forEach((h3) => {
-                observer.observe(h3);
-            });
-
-        });
   
     </script>
 
