@@ -100,10 +100,10 @@
                             <div class="col-7">
                                 <p>No matter what team you’re on or what talents you offer, your time with Atlassian should be in service of the mission.</p>   
                                 
-                                <h2 class="link-cop">How do I apply our mission to my work?
+                                <h2 class="link-cop" id="how-do-i-apply-our-mission-to-my-work">How do I apply our mission to my work?
                                     <a href="javascript:void(0);" class="tool" data-clipboard-text="mission#how-do-i-apply-our-mission-to-my-work">
                                         <i class="fas fa-link" ></i> 
-                                        <span class="tooltext">Copy link to heading</span>
+                                        <span class="tooltext"></span>
                                     </a>
                                 </h2>   
 
@@ -128,6 +128,11 @@
                                         </p>
                                     </li>
                                 </ul>                   
+                            </div>
+                            <div>                                
+                                <div id="sticky-navigator"> 
+                                    <p>content</p>
+                                </div>
                             </div>
                         </div> 
                     </div>
@@ -180,17 +185,16 @@
 
 
 
-    <script type="text/javascript">
+    <script type="text/javascript" src="js/index.js"></script>
 
+    <script type="text/javascript">
+        $(".tool").hover(function(){
+            $(".tool .tooltext").text("Copy link to heading"); 
+        });
         $('.tool').on('click', function() {
             var clipboard = new Clipboard(".tool");
             $(this).find(".tooltext").text("Copied!"); 
-            $(".tool").hover(function(){
-                $(".tool .tooltext").text("Copy link to heading"); 
-            });
-        });
- 
-  
+        });       
     </script>
 
 
