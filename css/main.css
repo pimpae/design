@@ -305,6 +305,10 @@ p.pb{
 .pb-l i{ 
   color: #fff;
 }
+.pb-l path{ 
+  fill: rgb(255, 255, 255);
+
+}
 .box4 h2{
   font-size: 24px;
   color: rgb(23, 43, 77);;
@@ -372,6 +376,7 @@ p.pb{
 }
 .mbox .bodx{
   padding-left: 80px; 
+  padding-top: 30px;
 }
 .mbox .headx h1{
   font-size: 36px;
@@ -695,7 +700,18 @@ h3.link-cop:hover a{
   font-weight: 400;
 }
 
-  
+.h2-res h2{
+  font-weight: 400;
+  color: rgb(23, 43, 77);
+  text-align: center;
+  font-size: 36px;
+}  
+
+.h2-res p{
+  text-align: center;
+  color: #5E6C84;
+  margin-bottom: 20px;
+}  
 
 
  
@@ -703,10 +719,6 @@ h3.link-cop:hover a{
 
 
  
-
- 
- 
-
 #sticky-navigator ul li {
   list-style: none;
   line-height: 1.4;
@@ -768,6 +780,20 @@ h3.link-cop:hover a{
   display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*.bg-navi{
+  background-color: #171C2D !important;
+}*/
+
 /*
 .bodx .row div h2:nth-child(1){ 
   display: none;
@@ -778,3 +804,10 @@ h3.link-cop:hover a{
 }
 
 */
+
+.navbar-nav .nav-item:nth-child(3){
+  display: none;
+}
+.navbar-nav .nav-item:nth-child(6){
+  display: none;
+}
