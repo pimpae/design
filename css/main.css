@@ -386,20 +386,35 @@ p.pb{
 }
 .footx{ 
   background-color: #FAFBFC;
-  padding: 24px 80px;
+  padding: 24px 80px 10px;
   color: rgb(94, 108, 132);
-  font-size: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+.footx a{
+  border-right: 1px solid rgb(94, 108, 132);
+}
+
+.footx a:last-nth-child(1){
+  border-right: 1px solid transparent; 
 }
 
  
 .footx a{
-  font-size: 12px;
+  font-size: 14px;
   color: rgb(94, 108, 132);
-  margin-left: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .footx a:hover{
   color: rgb(0, 101, 255); 
   text-decoration: underline;
+}
+.footx small{
+  font-size: 11px;
+  color: rgb(94, 108, 132);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .mbox .bodx .po{
