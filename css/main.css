@@ -347,17 +347,17 @@ p.pb{
   padding-left: 48px;
 }
 .sidebar ul li.active{
-  background-color: #FAFBFC;
-  border-left: 4px solid #2684FF;
+  background-color: rgba(250, 251, 252,.2);
+  /*border-left: 4px solid #2684FF;*/
 }
 .sidebar ul li.active a{
-  color: #171C2D !important;
+  color: #fff !important;
 }
 .sidebar ul li:hover:nth-child(n+2){
-  background-color: #FAFBFC; 
+  background-color: rgba(250, 251, 252,.4); 
 }
 .sidebar ul li:hover:nth-child(n+2) a{ 
-  color: #171C2D !important;
+  color: #fff !important;
 }
 .sidebar ul li a{  
   font-size: 14px; 
